@@ -1,0 +1,34 @@
+:root {
+  /* actually sets slide shadow that should match background color of the element behind th slider */
+  --posters-slider-shadow-bg-color: #000;
+  /* width of the swiper container (image) */
+  --posters-slider-width: 265px;
+  /* height of the swiper container (image) */
+  --posters-slider-height: 392px;
+}
+
+.posters-slider {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+.posters-slider .swiper {
+  overflow: visible;
+  width: var(--posters-slider-width);
+  height: var(--posters-slider-height);
+}
+.posters-slider .swiper-slide {
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+}
+.posters-slider .swiper-slide-shadow {
+  background: var(--posters-slider-shadow-bg-color);
+}
+.posters-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
